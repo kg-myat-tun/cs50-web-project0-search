@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!----------- Local Style Sheet  ----------->
+    <link rel="stylesheet" href="style.css" />
+
+    <!----------- CDN Links ----------->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/feather-icons"></script>
+
+    <title>Google Images</title>
+  </head>
+  <body class="bg-primary">
+    <!----------- Header Bar  ----------->
+    <section class="p-5">
+      <div class="flex justify-end gap-3">
+        <a
+          href="index.html"
+          class="text-white underline"
+          title="Go To Google Search"
+        >
+          Google Search</a
+        >
+        <a
+          href="advanced.html"
+          class="text-white underline"
+          title="Go To Google Advanced Search"
+        >
+          Google Advanced Search
+        </a>
+      </div>
+    </section>
+
+    <!----------- Main Content Start ----------->
+    <section class="p-40">
+      <div class="flex flex-col justify-center items-center gap-10">
+        <!----------- Logo ----------->
+        <div class="relative">
+          <img
+            src="https://www.google.com/images/branding/googlelogo/2x/googlelogo_light_color_272x92dp.png"
+            alt="google logo"
+            class="logo-image"
+          />
+          <span class="image-text">images</span>
+        </div>
+
+        <!----------- Search Form ----------->
+        <form action="https://www.google.com/search" method="get">
+          <div class="flex flex-col gap-7 items-center">
+            <div class="relative flex items-center">
+              <i data-feather="search" class="search-iocn"></i>
+              <input
+                type="text"
+                class="google-search-input custom-input"
+                name="q"
+              />
+
+              <div class="image-search-icon">
+                <svg
+                  class="Gdd5U"
+                  focusable="false"
+                  viewBox="0 0 192 192"
+                  xmlns="http://www.w3.org/2000/svg"
+                  data-iml="1707560922681"
+                >
+                  <rect fill="none" height="192" width="192"></rect>
+                  <g>
+                    <circle fill="#34a853" cx="144.07" cy="144" r="16"></circle>
+                    <circle fill="#4285f4" cx="96.07" cy="104" r="24"></circle>
+                    <path
+                      fill="#ea4335"
+                      d="M24,135.2c0,18.11,14.69,32.8,32.8,32.8H96v-16l-40.1-0.1c-8.8,0-15.9-8.19-15.9-17.9v-18H24V135.2z"
+                    ></path>
+                    <path
+                      fill="#fbbc04"
+                      d="M168,72.8c0-18.11-14.69-32.8-32.8-32.8H116l20,16c8.8,0,16,8.29,16,18v30h16V72.8z"
+                    ></path>
+                    <path
+                      fill="#4285f4"
+                      d="M112,24l-32,0L68,40H56.8C38.69,40,24,54.69,24,72.8V92h16V74c0-9.71,7.2-18,16-18h80L112,24z"
+                    ></path>
+                  </g>
+                </svg>
+              </div>
+            </div>
+
+            <input type="hidden" name="tbm" value="isch" />
+          </div>
+        </form>
+      </div>
+    </section>
+    <!----------- Main Content End----------->
+
+    <!----------- Scripts Start ----------->
+    <script>
+      feather.replace();
+    </script>
+  </body>
+</html>

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      content="/images/branding/googleg/1x/googleg_standard_color_128dp.png"
+      itemprop="image"
+    />
+
+    <!----------- Local Style Sheet  ----------->
+    <link rel="stylesheet" href="style.css" />
+
+    <!----------- CDN Links ----------->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/feather-icons"></script>
+
+    <title>Google Search</title>
+  </head>
+  <body class="bg-primary">
+    <!----------- Header Bar  ----------->
+    <section class="p-5">
+      <div class="flex justify-end gap-3">
+        <a href="images.html" class="text-white underline"> Google Images </a>
+        <a href="advanced.html" class="text-white underline">
+          Google Advanced Search
+        </a>
+      </div>
+    </section>
+
+    <!----------- Main Content Start ----------->
+    <section class="p-40">
+      <div class="flex flex-col justify-center items-center gap-10">
+        <!----------- Logo ----------->
+        <img
+          src="https://www.google.com/images/branding/googlelogo/2x/googlelogo_light_color_272x92dp.png"
+          alt="google logo"
+          class="logo-image"
+        />
+
+        <!----------- Search Form ----------->
+        <form action="https://www.google.com/search" method="get">
+          <div class="flex flex-col gap-7 items-center">
+            <div class="relative flex items-center">
+              <i data-feather="search" class="search-iocn"></i>
+              <input
+                type="text"
+                class="google-search-input custom-input"
+                placeholder="Search everything"
+                name="q"
+              />
+            </div>
+
+            <div class="flex justify-center gap-3">
+              <input type="submit" class="btn-primary" value="Google Search" />
+              <input
+                type="submit"
+                class="btn-primary"
+                name="btnI"
+                value="I'm Feeling Lucky"
+              />
+            </div>
+          </div>
+        </form>
+      </div>
+    </section>
+    <!----------- Main Content End----------->
+
+    <!----------- Scripts Start ----------->
+    <script>
+      feather.replace();
+    </script>
+  </body>
+</html>

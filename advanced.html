@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      content="/images/branding/googleg/1x/googleg_standard_color_128dp.png"
+      itemprop="image"
+    />
+
+    <!----------- Local Style Sheet  ----------->
+    <link rel="stylesheet" href="style.css" />
+
+    <!----------- CDN Links ----------->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/feather-icons"></script>
+
+    <title>Google Advanced Search</title>
+  </head>
+  <body class="bg-primary">
+    <!----------- Header Bar  ----------->
+    <section class="p-5">
+      <div class="flex justify-between gap-3">
+        <a
+          class="gb_8d gb_Hc gb_6d"
+          aria-label="Go to Google Search"
+          href="images.html"
+          title="Go to Google Search"
+        >
+          <img
+            src="https://www.gstatic.com/images/branding/googlelogo/svg/googlelogo_clr_74x24px.svg"
+            alt="Google logo"
+          />
+        </a>
+        <a
+          href="advanced.html"
+          class="text-white underline"
+          title="Go to Google Images"
+        >
+          Google Images
+        </a>
+      </div>
+    </section>
+
+    <!----------- Title And Separator ----------->
+    <section class="title-section">
+      <h5 class="advanced-search-title">Advanced Search</h5>
+    </section>
+
+    <!----------- Main Content Start ----------->
+    <section class="content-section">
+      <form action="https://www.google.com/search" method="get">
+        <div class="grid grid-cols-12 gap-4">
+          <div class="col-span-7">
+            <h4 class="text-base">Find pages with...</h4>
+          </div>
+
+          <div class="col-span-5">
+            <h4 class="text-[#777] text-base">To do this in the search box.</h4>
+          </div>
+
+          <!-- All there words -->
+          <div class="col-span-7">
+            <div class="grid grid-cols-12">
+              <div class="col-span-3">
+                <label>all these words:</label>
+              </div>
+              <div class="col-span-9">
+                <input class="w-full" type="text" name="as_q" />
+              </div>
+            </div>
+          </div>
+
+          <div class="col-span-5">
+            <div class="clarification">
+              Type the important words:
+              <span class="monospace">tri-colour rat terrier</span>
+            </div>
+          </div>
+
+          <!-- This exact word or phrase -->
+          <div class="col-span-7">
+            <div class="grid grid-cols-12">
+              <div class="col-span-3">
+                <label>this exact word or phrase:</label>
+              </div>
+              <div class="col-span-9">
+                <input class="w-full" type="text" name="as_epq" />
+              </div>
+            </div>
+          </div>
+
+          <div class="col-span-5">
+            <div class="clarification">
+              Put exact words in quotes:
+              <span class="monospace">"rat terrier"</span>
+            </div>
+          </div>
+
+          <!-- Any of these word -->
+          <div class="col-span-7">
+            <div class="grid grid-cols-12">
+              <div class="col-span-3">
+                <label>any of these word:</label>
+              </div>
+              <div class="col-span-9">
+                <input class="w-full" type="text" name="as_oq" />
+              </div>
+            </div>
+          </div>
+
+          <div class="col-span-5">
+            <div class="clarification">
+              Type OR between all the words you want:
+              <span class="monospace">miniature OR standard</span>
+            </div>
+          </div>
+
+          <!-- None of these words -->
+          <div class="col-span-7">
+            <div class="grid grid-cols-12">
+              <div class="col-span-3">
+                <label>none of these words:</label>
+              </div>
+              <div class="col-span-9">
+                <input class="w-full" type="text" name="as_eq" />
+              </div>
+            </div>
+          </div>
+
+          <div class="col-span-5">
+            <div class="clarification">
+              Put a minus sign just before words that you don't want:
+              <span class="monospace">-rodent, -"Jack Russell"</span>
+            </div>
+          </div>
+
+          <div class="col-span-7 text-end">
+            <input class="submit-btn" type="submit" value="Advanced Search" />
+          </div>
+        </div>
+      </form>
+    </section>
+    <!----------- Main Content End----------->
+
+    <!----------- Scripts Start ----------->
+    <script>
+      feather.replace();
+    </script>
+  </body>
+</html>
+
+<!----------- SEARCH CONTAINER STARTT ----------->
+<!-- <div class="advanced-search-container">
+    <form action="https://www.google.com/search" method="get">
+      <label>Find pages with...</label>
+      <div class="whitespace"></div>
+      <label>To do this in the search box.</label>
+      <div class="form-group">
+        <label>All these words:</label>
+        <input type="text" name="as_q" />
+        <div class="clarification">
+          Type the important words:
+          <span class="monospace">tri-colour rat terrier</span>
+        </div>
+      </div>
+      <div class="form-group">
+        <label>This exact word or phrase:</label>
+        <input type="text" name="as_epq" />
+        <div class="clarification">
+          Put exact words in quotes:
+          <span class="monospace">"rat terrier"</span>
+        </div>
+      </div>
+      <div class="form-group">
+        <label>Any of these words: </label>
+        <input type="text" name="as_oq" />
+        <div class="clarification">
+          Type OR between all the words you want:
+          <span class="monospace">miniature OR standard</span>
+        </div>
+      </div>
+      <div class="form-group">
+        <label>None of these words:</label>
+        <input type="text" name="as_eq" />
+        <div class="clarification">
+          Put a minus sign just before words that you don't want:
+          <span class="monospace">-rodent, -"Jack Russell"</span>
+        </div>
+      </div>
+      <div class="form-group">
+        <label></label>
+        <div class="right-align">
+          <input
+            type="submit"
+            class="blue-button"
+            value="Google Advanced Search"
+          />
+        </div>
+      </div>
+    </form>
+  </div> -->
+<!----------- SEARCH CONTAINER END ----------->
